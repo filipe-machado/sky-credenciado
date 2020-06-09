@@ -1,0 +1,76 @@
+@media screen and (min-width: 320px) {
+  .body {
+    background: $rose;
+    .pacotes {
+      height: 100px;
+      padding: 15px;
+      background: rgb(153, 0, 3);
+
+      h2, p {
+        color: #fff;
+      }
+
+      h2 {
+        text-align: center;
+        margin: 0;
+      }
+
+      p {
+        margin: 5px 0;
+        text-align: center;
+      }
+    }
+
+    .cards {
+      .card {
+        display: block;
+        background: rgb(255, 255, 255);
+        border-radius: 15px;
+        left: 26px;
+        top: -20px;
+        z-index: 72;
+        width: 270px;
+        height: 405px;
+        position: relative;
+        box-shadow: 2px 2px 5px #c3c3c3;
+
+        .card-header {
+          background-color: lighten($rose, 5);
+          border-top-left-radius: 15px;
+          border-top-right-radius: 15px;
+          padding-bottom: 10px;
+          h4 {
+            padding: 10px 0 0;
+            font-size: 28px;
+            text-align: center;
+            color: $red;
+            margin: 0;
+          }
+          p {
+            text-align: center;
+            margin: 0;
+            font-weight: 300;
+            font-family: Roboto Thin;
+            font-size: 20px;
+            color: rgb(85, 82, 82);
+            font-style: normal;
+          }
+        }
+
+        .card-body {
+          .card-icon {
+            p {
+              margin: 0;
+              font-family: Roboto Thin;
+              font-size: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1366px) {
+
+}

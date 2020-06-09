@@ -1,0 +1,98 @@
+.navbar {
+  background: linear-gradient(rgb(77, 0, 0), rgb(153, 0, 3));
+}
+
+@media screen and (min-width: 320px) {
+  .navbar {
+    height: 90px;
+
+    .logo img{
+      width: 127px;
+      height: 65px;
+      position: absolute;
+      margin: 12px 0 0 20px;
+    }
+
+    .cliente, .fone {
+      display: none;
+    }
+
+    .wpp {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+  }
+
+  .header {
+    height: 47vh;
+    width: 100vw;
+    background-image: url("./../../static/images/image-header-mobile.jpeg");
+    background-position: -30vw 0vh;
+    background-repeat: no-repeat;
+    background-size: 160%;
+  }
+}
+
+@media screen and (min-width: 375px) {
+
+}
+
+@media screen and (min-width: 1366px) {
+  .navbar {
+    height: 90px;
+
+    .logo img{
+      width: 127px;
+      height: 65px;
+      position: absolute;
+      margin: 12px 0 0 200px;
+    }
+
+    .cliente {
+      position: absolute;
+      right: 590px;
+      top: 15px;
+      display: block;
+
+      p {
+        line-height: 30px;
+        font-weight: 500;
+        font-size: 18px;
+        color: rgb(255, 255, 255);
+        font-style: normal;
+        margin: 0;
+
+        span {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .fone {
+      display: block;
+      img {
+        position: absolute;
+        top: 30px;
+        right: 530px;
+      }
+
+      a {
+        font-weight: 600;
+        position: absolute;
+        color: #fff;
+        font-size: 25px;
+        top: 35px;
+        right: 360px;
+      }
+    }
+  }
+
+  .header {
+    height: 62vh;
+    background-image: url("./../../static/images/image-header-web.png");
+    background-position: 0vw 0vh;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+}
