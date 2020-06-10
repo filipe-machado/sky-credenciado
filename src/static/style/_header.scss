@@ -13,14 +13,8 @@
       margin: 12px 0 0 20px;
     }
 
-    .cliente, .fone {
+    .cliente, .fone, .wpp {
       display: none;
-    }
-
-    .wpp {
-      position: absolute;
-      top: 20px;
-      right: 20px;
     }
   }
 
@@ -32,28 +26,48 @@
     background-repeat: no-repeat;
     background-size: 160%;
   }
+
+  .navbar-bottom {
+    display: grid;
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
+    background: #fff;
+    width: 100%;
+    grid-template-columns: 3fr 1fr;
+
+    .fone {
+      display: flex;
+      img {
+        width: 30px;
+        margin: 10px;
+      }
+      a {
+        color: $red;
+        text-decoration: none;
+        font-size: 20px;
+        margin: auto 0;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 375px) {
-
+  .header {
+    height: 41vh;
+  }
 }
 
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 768px) {
   .navbar {
-    height: 90px;
-
-    .logo img{
-      width: 127px;
-      height: 65px;
-      position: absolute;
-      margin: 12px 0 0 200px;
+    .cliente, .fone, .wpp {
+      display: block;
     }
 
     .cliente {
       position: absolute;
-      right: 590px;
+      right: 320px;
       top: 15px;
-      display: block;
 
       p {
         line-height: 30px;
@@ -70,11 +84,10 @@
     }
 
     .fone {
-      display: block;
       img {
         position: absolute;
         top: 30px;
-        right: 530px;
+        right: 270px;
       }
 
       a {
@@ -83,8 +96,82 @@
         color: #fff;
         font-size: 25px;
         top: 35px;
-        right: 360px;
+        right: 100px;
       }
+    }
+
+    .wpp {
+      img {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+      }
+    }
+  }
+
+  .header {
+    height: 60vh;
+  }
+
+  .navbar-bottom {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .navbar {
+    height: 90px;
+
+    .cliente {
+      position: absolute;
+      right: 560px;
+      top: 15px;
+      display: block;
+
+      p {
+        line-height: 30px;
+        font-weight: 500;
+        font-size: 18px;
+        color: rgb(255, 255, 255);
+        font-style: normal;
+        margin: 0;
+
+        a {
+          color: #fff;
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .fone {
+      display: block;
+      img {
+        position: absolute;
+        top: 30px;
+        right: 510px;
+      }
+
+      a {
+        font-weight: 600;
+        position: absolute;
+        color: #fff;
+        font-size: 25px;
+        top: 32px;
+        right: 340px;
+      }
+    }
+
+    .wpp {
+      position: absolute;
+      top: 0px;
+      right: 200px;
+    }
+
+    .logo img{
+      width: 127px;
+      height: 65px;
+      position: absolute;
+      margin: 12px 0 0 200px;
     }
   }
 

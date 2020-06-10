@@ -1,0 +1,277 @@
+@media screen and (min-width: 320px) {
+  .footer {
+    .vantagens {
+
+      .text {
+        width: 90vw;
+        margin: 0 auto;
+        h4 {
+          text-transform: uppercase;
+          margin-bottom: 0;
+          color: darken($grey, 10);
+        }
+
+        p {
+          color: $grey;
+          margin-top: 0;
+          text-align: justify;
+        }
+        p {
+          &:nth-child(1) {
+            font-size: 36px;
+            color: $grey;
+            line-height: 30px;
+
+            span {
+              color: $red;
+            }
+          }
+        }
+      }
+    }
+    .image {
+      width: 90vw;
+      margin: 0 auto;
+      img {
+        max-width: 100%;
+      }
+    }
+
+    .central-vendas {
+      background-color: $wine;
+
+      .container {
+        width: 90vw;
+        margin: 0 auto;
+        padding: 30px 0;
+        display: grid;
+        grid-template-columns: 2fr 5fr;
+        grid-template-areas: "logo fone fone fone"
+                             "cliente cliente cliente cliente"
+                             "info info info info";
+
+        img {
+          grid-area: logo;
+          align-self: center;
+          width: 75px;
+        }
+
+        .fone {
+          grid-area: fone;
+          align-self: center;
+          p {
+            margin: 0 10px;
+            color: #fff;
+            font-size: 14px;
+          }
+
+          a {
+            margin: 0 10px;
+            color: #fff;
+            font-size: 25px;
+            color: darken(#ffff00, 10);
+          }
+        }
+
+        .cliente {
+          grid-area: cliente;
+
+          p {
+            color: #fff;
+            font-size: 22px;
+
+            a {
+              color: #fff;
+              text-decoration: underline;
+            }
+          }
+        }
+
+        .info {
+          grid-area: info;
+
+          p {
+            font-size: 11px;
+            color: #fff;
+          }
+        }
+      }
+    }
+
+    .obs {
+      background-color: $bg-footer;
+      padding: 10px 0;
+      margin-bottom: 10px;
+
+      .container {
+        width: 90vw;
+        margin: auto;
+        margin-bottom: 40px;
+
+        p {
+          color: #fff;
+          font-size: 12px;
+          text-align: justify;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 360px) {
+  .footer {
+    .vantagens {
+      .text {
+        width: 310px;
+      }
+    }
+
+    .image {
+      width: 310px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    display: grid;
+    grid-template-areas: "vantagem imagem"
+                           "central central"
+                           "obs obs";
+    .vantagens {
+      grid-area: vantagem;
+      .text {
+        /* margin: 20px auto; */
+        width: 50vw;
+        p {
+          line-height: 14px;
+          text-align: justify;
+          &:first-child {
+            font-size: 24px;
+            line-height: 20px;
+          }
+        }
+      }
+    }
+    .image {
+      grid-area: imagem;
+      display: grid;
+      grid-template-rows: 1fr 2fr;
+
+      img {
+        &:nth-child(1) {
+          align-self: flex-end;
+        }
+        &:nth-child(2) {
+          align-self: flex-start;
+        }
+      }
+    }
+
+    .central-vendas {
+      grid-area: central;
+      .container {
+        width: 90vw;
+        grid-template-columns: 2fr 2fr 2fr 5fr;
+        grid-template-areas: "logo fone fone cliente"
+                             "logo fone fone info";
+
+        img {
+          grid-area: logo;
+        }
+
+        .fone {
+          grid-area: fone;
+          a {
+            font-size: 32px;
+          }
+        }
+
+        .cliente {
+          grid-area: cliente;
+
+          p {
+            margin: 0;
+          }
+        }
+
+        .info {
+          grid-area: info;
+        }
+      }
+    }
+
+    .obs {
+      grid-area: obs;
+      margin-bottom: 0;
+      .container {
+        width: 90vw;
+
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .footer {
+
+    .vantagens {
+      margin: 70px auto;
+
+      .text {
+        p {
+          text-align: left;
+
+          &:nth-child(1) {
+            font-size: 36px;
+            color: $grey;
+            line-height: 36px;
+
+            span {
+              color: $red;
+            }
+          }
+        }
+      }
+    }
+
+    .central-vendas {
+      .container {
+        width: 70vw;
+        img {
+          width: 115px;
+        }
+        .fone {
+          a {
+            font-size: 40px;
+          }
+        }
+
+        .cliente {
+          p {
+            font-size: 20px;
+          }
+        }
+
+        .info {
+          p {
+            font-size: 15px;
+          }
+        }
+
+      }
+    }
+
+    .obs {
+      .container {
+        width: 60vw;
+        p {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}
