@@ -39,7 +39,9 @@ function Header() {
         </div>
       </div>
       <div>
-        <div className="header" />
+        <a href="tel:08002198525">
+          <div className="header" />
+        </a>
       </div>
     </>
   );
