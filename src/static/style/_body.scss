@@ -152,8 +152,7 @@
       grid-template-columns: 1fr 1fr 1fr;
 
       .card {
-        height: 405px;
-        width: 20vw;
+        width: 32vw;
         box-shadow: 2px 2px 6px $grey;
         transition: all 400ms;
 
@@ -176,11 +175,35 @@
         .card-body {
           padding: 10px 5px;
         }
+
+        .preco {
+          p {
+            &:nth-child(1) {
+              font-size: 3.5vw;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .body {
+    .cards {
+      .card {
+        width: 25vw;
       }
     }
   }
 }
 
 @media screen and (min-width: 1366px) {
-
+  .body {
+    .cards {
+      .card {
+        width: 20vw;
+      }
+    }
+  }
 }
